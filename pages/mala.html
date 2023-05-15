@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+#slideshow img:not(:first-child) {
+  display: none;
+}
+    </style>
+    <script>
+var slideIndex = 0;
+setInterval(function() {
+  var slides = document.getElementById("slideshow").getElementsByTagName("img");
+  slides[slideIndex].style.display = "none";
+  slideIndex++;
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  slides[slideIndex].style.display = "block";
+}, 3000);
+    </script>
 </head>
-<body>
-    Hi
+<body bgcolor="lightblue">
+    
+    <h1> Mala Indian Kitchen and Bar</h1>
 
-    <a href="../index.html">Back to Home</a>
+    <p>Mala Indian Kitchen and Bar is a popular restaurant located just outside Canary Wharf, London. This restaurant offers a unique dining experience with a fusion of modern and traditional Indian cuisine. The restaurant has an elegant ambiance with a stylish interior and modern decor. They serve a wide variety of dishes, from authentic Indian curries to contemporary fusion cuisine. Indian Kitchen and Bar is also known for its extensive drink menu that includes an array of cocktails, wine, and beer. With excellent food, drinks, and service, Indian Kitchen and Bar is a must-visit restaurant for anyone looking to indulge in the flavors of India in a modern and stylish setting.</p>
+
+    <div id="slideshow">
+        <img src="../images/mala balcony.jpg" alt="Image 1"width="600" height="450">
+        <img src="../images/malaFood.jpg" alt="Image 2" width="600" height="450">
+        <img src="../images/malaWalk.jpg" alt="Image 3" width="600" height="450">
+      </div>
+
+    <p><a href="../index.html">Back to Home</a></p>
 </body>
 </html>
