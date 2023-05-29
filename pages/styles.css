@@ -1,3 +1,16 @@
 body{
     background-color: lightblue;
 }
+
+*{
+    color:black;
+    font-size: 12pt;
+    font-family: Arial; 
+    font-weight: bold;
+}
+
+h1,h2{
+    font-size: 18pt;
+    text-decoration: underline;
+
+}
