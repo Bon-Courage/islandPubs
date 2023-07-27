@@ -9,6 +9,69 @@
 </head>
 
 <body>
+    <h1> Register Now</h1>
+    <p>Pease provide your details below:</p>
+    <form action="">
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="telephonenumber">Phone Number:</label>
+            <input type="tel" name="telephonenumber" id="telephonenumber">
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <h2><label for="reasons">Tell us about you:</label></h2>
+
+            <textarea id="reasons" name="reasons" rows="5" cols="40"></textarea>
+        </div>
+        <div>
+            <label for="cuising">What is your favourite cuisine?</label>
+            <select name="cuisine" id="cuisine">
+                <option value="Please Select">Please Select</option>
+                <option value="Indian">Indian</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+            </select>
+        </div>
+
+        <div>
+            <h2>How would you like to be contacted?</h2>
+            <input type="radio" id="phone" name="contact" value="phone">
+            <label for="phone">Call Me</label>
+            <input type="radio" id="email" name="contact" value="email">
+            <label for="email">Email Me</label>
+            <input type="radio" id="opt-out" name="contact" value="none">
+            <label for="opt-out">Do not contact me</label>
+        </div>
+
+
+
+
+
+        <div><button>Submit</button></div>
+
+
+
+
+
+
+
+
+    </form>
 
 </body>
 
