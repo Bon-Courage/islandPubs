@@ -53,3 +53,19 @@ ul li a {
   background-color: white;
   color: red;
 }
+
+.detail-boxes {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.detail-boxes2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fieldset-container {
+  max-width: 400px;
+  padding: 10px;
+  */
+}

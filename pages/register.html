@@ -10,36 +10,36 @@
 
 <body>
     <h1> Register Now</h1>
-    <p>Pease provide your details below:</p>
+    <p><b>Pease provide your details below:</b></p>
     <form action="">
         <div>
             <label for="firstname">First Name:</label>
-            <input type="text" name="firstname" id="firstname" required>
+            <input type="text" name="firstname" id="firstname" class="detail-boxes">*
         </div>
         <div>
             <label for="lastname">Last Name:</label>
-            <input type="text" name="lastname" id="lastname" required>
+            <input type="text" name="lastname" id="lastname" required class="detail-boxes">*
         </div>
         <div>
             <label for="dob">Date of Birth:</label>
-            <input type="date" name="dob" id="dob" required>
+            <input type="date" name="dob" id="dob" required class="detail-boxes" min="1900-01-01" max="2023-07-27">*
         </div>
         <div>
             <label for="telephonenumber">Phone Number:</label>
-            <input type="tel" name="telephonenumber" id="telephonenumber">
+            <input type="tel" name="telephonenumber" id="telephonenumber" class="detail-boxes" pattern="[0-9]{11}">
         </div>
         <div>
             <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" class="detail-boxes">
         </div>
         <div>
-            <h2><label for="reasons">Tell us about you:</label></h2>
+            <p><label for="reasons"><b>Tell us about yourself:</b></label></p>
 
-            <textarea id="reasons" name="reasons" rows="5" cols="40"></textarea>
+            <textarea id="reasons" name="reasons" rows="5" cols="40" class="detail-boxes2"></textarea>
         </div>
         <div>
             <label for="cuising">What is your favourite cuisine?</label>
-            <select name="cuisine" id="cuisine">
+            <select name="cuisine" id="cuisine" class="detail-boxes2">
                 <option value="Please Select">Please Select</option>
                 <option value="Indian">Indian</option>
                 <option value="Mexican">Mexican</option>
@@ -47,28 +47,21 @@
                 <option value="Italian">Italian</option>
             </select>
         </div>
-
-        <div>
-            <h2>How would you like to be contacted?</h2>
-            <input type="radio" id="phone" name="contact" value="phone">
-            <label for="phone">Call Me</label>
-            <input type="radio" id="email" name="contact" value="email">
-            <label for="email">Email Me</label>
-            <input type="radio" id="opt-out" name="contact" value="none">
-            <label for="opt-out">Do not contact me</label>
+        <div class="fieldset-container">
+            <fieldset>
+                <legend><b>How would you like to be contacted?*</b></legend>
+                <div>
+                    <input type="radio" id="phone" name="contact" value="phone" required>
+                    <label for="phone">Call Me</label>
+                    <input type="radio" id="email" name="contact" value="email" required>
+                    <label for="email">Email Me</label>
+                    <input type="radio" id="opt-out" name="contact" value="none" required>
+                    <label for="opt-out">Do not contact me</label>
+                </div>
+            </fieldset>
         </div>
 
-
-
-
-
-        <div><button>Submit</button></div>
-
-
-
-
-
-
+        <div><button class="detail-boxes">Submit</button></div>
 
 
     </form>
