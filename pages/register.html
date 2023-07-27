@@ -40,7 +40,7 @@
         <div>
             <label for="cuising">What is your favourite cuisine?</label>
             <select name="cuisine" id="cuisine" class="detail-boxes2">
-                <option value="Please Select">Please Select</option>
+                <option value="None Selected">Please Select</option>
                 <option value="Indian">Indian</option>
                 <option value="Mexican">Mexican</option>
                 <option value="Chinese">Chinese</option>
@@ -61,10 +61,18 @@
             </fieldset>
         </div>
 
-        <div><button class="detail-boxes">Submit</button></div>
+        <div><button class="detail-boxes">I'll Register</button></div>
+
 
 
     </form>
+
+    <!-- There must be a neater way of doing this  -->
+
+    <form>
+        <div><button class="detail-boxes" formaction="../index.html">No Thanks</button></div>
+    </form>
+
 
 </body>
 
