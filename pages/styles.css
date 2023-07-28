@@ -26,7 +26,8 @@ ul li a {
   padding: 10px 20px;
   font-size: 35px;
   border: 10px solid black;
-  transition: 0.3s all
+  transition: 0.3s all;
+  margin: 10px;
 }
 
 .register-button:hover {
@@ -46,7 +47,8 @@ ul li a {
   padding: 10px 20px;
   font-size: 35px;
   border: 10px solid black;
-  transition: 0.3s all
+  transition: 0.3s all;
+  margin: 10px;
 }
 
 .error-button:hover {
@@ -67,4 +69,12 @@ ul li a {
 .fieldset-container {
   max-width: 400px;
   padding: 10px;
+}
+
+.button-container {
+  display: inline-block;
+}
+
+p {
+  max-width: 720px;
 }
