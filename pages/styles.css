@@ -20,39 +20,34 @@ ul li a {
   text-decoration: none;
 }
 
-.register-button {
+.top-picks {
+  padding: 20px;
+  margin: 20px;
+  border: solid black 5px;
+  width: fit-content;
+}
+
+.button {
+  display: inline-block;
   background-color: white;
   color: black;
-  padding: 10px 20px;
+  padding: 20px;
   font-size: 35px;
   border: 10px solid black;
-  transition: 0.3s all;
-  margin: 10px;
+  transition: 0.5s all;
+  margin: 20px;
+
+}
+
+.button:hover {
+  background-color: white;
 }
 
 .register-button:hover {
-  background-color: white;
   color: rgb(8, 193, 57);
 }
 
-.button-container {
-  margin-top: 5px;
-  margin-bottom: 5px;
-
-}
-
-.error-button {
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  font-size: 35px;
-  border: 10px solid black;
-  transition: 0.3s all;
-  margin: 10px;
-}
-
 .error-button:hover {
-  background-color: white;
   color: red;
 }
 
@@ -69,11 +64,6 @@ ul li a {
 .fieldset-container {
   max-width: 400px;
   padding: 10px;
-}
-
-.button-container,
-{
-display: inline-block;
 }
 
 p {
